@@ -1,0 +1,7 @@
+<launch>
+
+  <!-- Show in Rviz   -->
+  <node name="rviz" pkg="rviz" type="rviz"
+    args="-d $(find sim_ml)/rviz/createDataset.rviz"/>
+
+</launch>
