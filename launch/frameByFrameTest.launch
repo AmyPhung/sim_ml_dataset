@@ -1,0 +1,11 @@
+<launch>
+
+  <!-- Show in Rviz   -->
+  <!-- <node pkg="rosbag" type="play" name="rosbag"
+    args="$(find sim_ml_dataset)/bags/correct.bag"/> -->
+  <node name="rviz" pkg="rviz" type="rviz"
+    args="-d $(find sim_ml_dataset)/rviz/simViz.rviz"/>
+  <node name="frameByFrame" pkg="sim_ml_dataset"
+    type="frameByFrame.py" output="screen"/>
+
+</launch>
